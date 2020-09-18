@@ -4,7 +4,8 @@
   "description": "",
   "main": "dist/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/nirastor/ajs-10-homeworks-3-platforms/issues"
   },
-  "homepage": "https://github.com/nirastor/ajs-10-homeworks-3-platforms#readme"
+  "homepage": "https://github.com/nirastor/ajs-10-homeworks-3-platforms#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.11.6",
+    "@babel/core": "^7.11.6",
+    "@babel/preset-env": "^7.11.5",
+    "babel-loader": "^8.1.0",
+    "webpack": "^4.44.2",
+    "webpack-cli": "^3.3.12"
+  },
+  "publishConfig": {
+    "registry":"https://npm.pkg.github.com/"
+  }
 }
